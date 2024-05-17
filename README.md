@@ -1,6 +1,7 @@
 # MyResumePortfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+This is my first angular application. I used small logics to save and populate data using local storage
 
 ## Development server
 
