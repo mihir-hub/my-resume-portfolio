@@ -1,0 +1,192 @@
+::ng-deep ::-webkit-scrollbar{
+    display: none;
+    
+  }
+  
+  .content{
+      margin-left: 250px;
+      margin-top: 20px;
+      scrollbar-width: 0.5px;
+  }
+    
+  .btn{
+      margin: 15px;
+  }
+
+  .border{
+      margin: 20px;
+      padding: 1px 16px;
+      margin-bottom: 20px;
+      box-shadow: 1px 1px 15px 1px rgb(192, 191, 191);
+      border-radius: 10px;
+      caret-color: transparent;
+  }
+  
+  
+  @media screen and (max-width: 940px) {
+      .content{
+          margin-top: 50px;
+          margin-left: 0;
+        width: 100%;
+      }
+        .border{
+          width: 100%;
+        }
+
+        .btn{
+            width: 120px;
+        }
+         .modal-header{
+          width: 100%;   
+      }
+  
+      .modal.show .modal-dialog {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          left: 50%;
+          top:50%;
+      }
+      
+      .modal-content{
+          width: auto;
+          height: 50%;
+      }
+      
+      .modal-footer{
+          height: 70px;
+      }
+      }
+  
+      @media screen and (max-width: 700px) {
+        br{
+          display: none;
+        }
+          div.content{
+              margin-top: 50px;
+              margin-left: 0;
+            width: 100%;
+          }
+  
+  
+          div.content hr{
+              display: none;
+          }
+            .border{
+              width: auto;
+            }
+            
+          }
+  
+          .modal-header{
+              height: 50px; 
+              width: 900px;   
+          }
+          
+          .modal.show .modal-dialog {
+              transform: translate(-40%, 0%);
+              scrollbar-width: none;
+          }
+          
+          .modal-content{
+              width: auto;
+              }
+          
+          .modal-footer{
+              height: 70px;
+          }
+          
+  
+          .form-control label{
+              font-size: small;
+          }
+  
+          @media screen and (max-width: 700px) {
+              div.content{
+                  margin-top: 100px;
+              }
+          }
+  
+          
+    .container {
+      margin: 15px;
+      width: auto;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 100;
+      font-size: small ;
+      margin-top: 10px;
+      box-shadow: 1px 1px 15px rgb(150, 150, 150);
+      padding: 0;
+    }
+  
+  
+    #tesTab {
+      width: 100%;
+      min-width: 100%;
+      border-collapse: collapse;
+      border-top: 70px solid #153065;
+      font-weight: 200;
+      opacity: 1;
+      text-align: center;
+      background-color: transparent;
+      
+    }
+    
+    #tesTab td {
+      padding: 20px;
+      border-right: 1px solid #fff;
+      min-width: 150px;
+    }
+    #tesTab tr:nth-child(odd) {
+      /* background-color: #efefef; */
+      background-color: transparent;
+    }
+    #tesTab tr:nth-child(even) {
+      background-color: #dedede;
+    }
+    #tesTab tr:not(:first-child){    
+      transform: rotateX(90deg);
+      animation-name: rotx;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 1s;
+    }
+    @keyframes rotx {
+      to {
+        transform: rotateX(0deg);
+      }
+    }
+    #tesTab tr:nth-child(1) td::before {
+      display: block;
+      height: 0;
+      position: relative;
+      top: -5em;
+      left: 0;
+      color: #efefef;
+      font-weight: 700;
+    }
+  
+    #tesTab tr:nth-child(1) td:nth-child(1)::before {
+      content: "Report No";
+    }
+    #tesTab tr:nth-child(1) td:nth-child(2)::before {
+      content: "Status";
+    }
+    #tesTab tr:nth-child(1) td:nth-child(3)::before {
+      content: "Currency";
+      white-space: pre;
+    }
+    #tesTab tr:nth-child(1) td:nth-child(4)::before {
+      content: "Total Amount";
+    }
+    #tesTab tr:nth-child(1) td:nth-child(5)::before {
+      content: "Submitted On";
+    }
+    #tesTab tr:nth-child(1) td:nth-child(6)::before {
+      content: "Print";
+    }
+    #tesTab tr:nth-child(1) td:nth-child(6)::before {
+        content: "Actions";
+    }

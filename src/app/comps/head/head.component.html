@@ -1,0 +1,30 @@
+<nav class="navbar navbar-black bg-black">
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo.png" width="200" height="40" alt="" style="margin: 15px;"/>
+    </a>
+    <p>Hi {{userFirstName}}, Welcome</p>
+  </nav>
+
+  <div class="sidebar">
+    <button class="btn btn-secondary btnside" (click)="goHome()">Home</button>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle btnside" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Components
+        </button>
+        <div class="dropdown-menu drpdwn" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item drpitem" href="">About</a>
+          <a class="dropdown-item drpitem" href="">Skills</a>
+          <a class="dropdown-item drpitem" href="">Education</a>
+          <a class="dropdown-item  drpitem" href="">Experience</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle btnside" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Admin
+        </button>
+        <div class="dropdown-menu drpdwn" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item drpitem" href="auditor">Auditor</a>
+          <a class="dropdown-item drpitem" href="#">Reports</a>
+        </div>
+      </div>
+</div>

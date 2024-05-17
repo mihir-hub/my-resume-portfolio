@@ -1,0 +1,85 @@
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100px;
+}
+
+p{
+    color: white;
+    margin: 15px;
+}
+
+
+
+.sidebar{
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #dcdcdc;
+    position: fixed;
+    top: 100px;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 1px 1px 12px rgb(155, 155, 155);
+    border-radius: 0;
+  }
+  
+  @media screen and (max-width: 940px) {
+    nav{
+      width: 100%;
+    }
+      .sidebar {
+        /* width: 100%;
+        height: auto;
+        position: relative; */
+        display: none;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0; width: 100%;}
+      
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+      .sidebar{
+          display: none;
+      }
+    }
+    .btnside{
+      font-size: small;    
+      width: 90%;
+      padding: 0;
+      margin-top: 10px;
+      color: black;
+      background-color: white;
+      /* border: 1px solid rgb(132, 132, 132);  */
+      border: none;
+      box-shadow: 1px 1px 15px 2px rgb(171, 171, 171);
+      /* border-top-left-radius: 30px;
+      border-bottom-right-radius: 30px; */
+      margin: 15px;
+      height: 50px;
+      text-align: center;
+      border-radius: 10px;  
+    }
+    .btnside:hover{
+      background-color: grey;
+      transition: 0.7s;
+    }
+    .dropdown-menu{
+      transition: 0.8s;
+      width: 90%;
+      font-size: small;
+      border-radius: 10px;
+      border: 1px solid black;
+  }
+  
+    .drpdwn a{
+      padding: 15px; 
+    }
+  
