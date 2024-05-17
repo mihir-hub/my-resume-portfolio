@@ -4,6 +4,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -33,5 +34,9 @@ export class DashboardComponent implements OnInit {
       width: '500px', height: '400px'
     });
   }
-
+  openContact() {
+    this.dialog.open(ContactComponent, {
+      width: '400px', height:'300px'
+    })
+  }
 }

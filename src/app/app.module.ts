@@ -14,6 +14,8 @@ import { AboutmeComponent } from './pages/dashboard/aboutme/aboutme.component';
 import { SkillsComponent } from './pages/dashboard/skills/skills.component';
 import { EducationComponent } from './pages/dashboard/education/education.component';
 import { ExperienceComponent } from './pages/dashboard/experience/experience.component';
+import { AboutComponent } from './mainpages/about/about.component';
+import { ContactComponent } from './pages/dashboard/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ExperienceComponent } from './pages/dashboard/experience/experience.com
     AboutmeComponent,
     SkillsComponent,
     EducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
