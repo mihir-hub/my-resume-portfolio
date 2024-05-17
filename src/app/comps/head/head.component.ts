@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-head',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './head.component.css'
 })
 export class HeadComponent implements OnInit {
+  constructor(private router: Router){}
   userFirstName: any = '';
-  goHome() { }
   ngOnInit(): void {
     this.getName();
   }
@@ -15,5 +16,8 @@ export class HeadComponent implements OnInit {
     if (typeof window !== 'undefined') {
       this.userFirstName = window.localStorage.getItem('angularName');
     }
+  }
+  goHome() { 
+    this.router.navigate(['dashboard']);
   }
 }
