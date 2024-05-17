@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './head.component.css'
 })
 export class HeadComponent implements OnInit {
-goHome() {
-throw new Error('Method not implemented.');
-}
-  userFirstName = window.localStorage.getItem('angularName')
-  ngOnInit(): void {}
-  
+  userFirstName: any = '';
+  goHome() { }
+  ngOnInit(): void {
+    this.getName();
+  }
+  getName() {
+    if (typeof window !== 'undefined') {
+      this.userFirstName = window.localStorage.getItem('angularName');
+    }
+  }
 }
