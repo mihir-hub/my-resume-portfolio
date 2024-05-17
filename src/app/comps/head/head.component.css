@@ -40,9 +40,14 @@ p{
       .sidebar a {float: left;}
       div.content {margin-left: 0; width: 100%;}
       
+      p{
+        color: white;
+        margin: 15px;
     }
     
-    @media screen and (max-width: 400px) {
+    }
+    
+    @media screen and (max-width: 300px) {
       .sidebar a {
         text-align: center;
         float: none;
@@ -78,6 +83,11 @@ p{
       font-size: small;
       border-radius: 10px;
       border: 1px solid black;
+      p{
+        color: white;
+        margin: 15px;
+    }
+    
   }
   
     .drpdwn a{
